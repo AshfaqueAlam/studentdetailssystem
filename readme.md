@@ -1,12 +1,4 @@
-## Generate a create table script for an existing table in phpmyadmin:-
-
-```
-SHOW CREATE TABLE `tablename`;
-```
-- Click on `+Options`. Select `Full texts`. Click on `Go`.
-
-
-Then either run this [database_script_file.sql](/database_script_file.sql) file or run the below code in SQL tab of phpMyAdmin.
+### Either run this [database_script_file.sql](/database_script_file.sql) file or run the below code in SQL tab of phpMyAdmin.
 
 ```
 CREATE TABLE `studentdetails` (
@@ -22,3 +14,11 @@ CREATE TABLE `studentdetails` (
 
 ## Snapshot of database structure:-
 ![database structure](https://github.com/AshfaqueAlam/studentdetailssystem/blob/progress/Snapshot%20of%20database%20structure.png)
+
+
+## How to generate a create table script for an existing table in phpmyadmin:-
+
+```
+SHOW CREATE TABLE `tablename`;
+```
+- Click on `+Options`. Select `Full texts`. Click on `Go`.
