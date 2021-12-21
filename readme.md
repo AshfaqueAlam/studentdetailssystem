@@ -18,3 +18,6 @@ CREATE TABLE `studentdetails` (
   PRIMARY KEY (`sl_no`)
 ) ENGINE=InnoDB AUTO_INCREMENT=119 DEFAULT CHARSET=utf8mb4
 ```
+
+## Snapshot of database structure:-
+![database structure](https://github.com/AshfaqueAlam/studentdetailssystem/blob/progress/Snapshot%20of%20database%20structure.png)
