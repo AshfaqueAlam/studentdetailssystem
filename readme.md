@@ -2,8 +2,9 @@
 
 ```
 SHOW CREATE TABLE `tablename`;
-Click on `+Options`. Select `Full texts`. Click on `Go`.
 ```
+- Click on `+Options`. Select `Full texts`. Click on `Go`.
+
 
 Then either run this [database_script_file.sql](/database_script_file.sql) file or run the below code in SQL tab of phpMyAdmin.
 
