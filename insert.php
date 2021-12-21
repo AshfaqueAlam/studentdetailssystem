@@ -60,7 +60,7 @@ if (isset($_POST['submit']) && $_SERVER["REQUEST_METHOD"] == "POST") {
       echo "    Data inserted successfully!";
       echo "  </div>";
       echo "</div>";
-      // header("location: index.php");
+      header("location: index.php");
     } else {
       // die(mysqli_error($con));
       echo "<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"display: none;\">";
@@ -84,109 +84,63 @@ if (isset($_POST['submit']) && $_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Student Details System" />
-    <meta name="author" content="Ashfaque Alam & Swapnomoy Chatterjee" />
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Student Details System" />
+  <meta name="author" content="Ashfaque Alam & Swapnomoy Chatterjee" />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>Insert Details</title>
-    <script>
-      if (window.history.replaceState) {
-        window.history.replaceState(null, null, window.location.href);
-      }
-    </script>
-  </head>
+  <title>Insert Details</title>
+  <script>
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href);
+    }
+  </script>
+</head>
 
-  <body>
-    <div class="container my-5">
-      <form method="post">
-        <div class="mb-3">
-          <label for="validationDefault01" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control has-validation"
-            id="validationDefault01"
-            placeholder="Enter your Name"
-            name="name"
-            autocomplete="off"
-            required
-          />
+<body>
+  <div class="container my-5">
+    <form method="post">
+      <div class="mb-3">
+        <label for="validationDefault01" class="form-label">Name</label>
+        <input type="text" class="form-control has-validation" id="validationDefault01" placeholder="Enter your Name" name="name" autocomplete="off" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="validationDefault02" class="form-label">Roll No.</label>
+        <input type="text" class="form-control has-validation" id="validationDefault02" placeholder="Enter your Roll Number" name="roll_no" autocomplete="off" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="validationDefault03" class="form-label">Course Name</label>
+        <input type="text" class="form-control has-validation" id="validationDefault03" placeholder="Enter your Course name" name="course_name" autocomplete="off" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="validationDefault04" class="form-label">Address</label>
+        <input type="text" class="form-control has-validation" id="validationDefault04" placeholder="Enter your Current Address" name="address" autocomplete="off" required />
+      </div>
+
+      <div class="mb-4">
+        <label for="validationDefault05" class="form-label">Mobile No.</label>
+        <input type="number" class="form-control has-validation" id="validationDefault05" placeholder="Enter your Mobile Number" name="mobile_no" autocomplete="off" required />
+      </div>
+
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+          <button type="submit" class="btn btn-primary" name="submit">
+            Submit
+          </button>
         </div>
+      </div>
+    </form>
+  </div>
 
-        <div class="mb-3">
-          <label for="validationDefault02" class="form-label">Roll No.</label>
-          <input
-            type="text"
-            class="form-control has-validation"
-            id="validationDefault02"
-            placeholder="Enter your Roll Number"
-            name="roll_no"
-            autocomplete="off"
-            required
-          />
-        </div>
-
-        <div class="mb-3">
-          <label for="validationDefault03" class="form-label"
-            >Course Name</label
-          >
-          <input
-            type="text"
-            class="form-control has-validation"
-            id="validationDefault03"
-            placeholder="Enter your Course name"
-            name="course_name"
-            autocomplete="off"
-            required
-          />
-        </div>
-
-        <div class="mb-3">
-          <label for="validationDefault04" class="form-label">Address</label>
-          <input
-            type="text"
-            class="form-control has-validation"
-            id="validationDefault04"
-            placeholder="Enter your Current Address"
-            name="address"
-            autocomplete="off"
-            required
-          />
-        </div>
-
-        <div class="mb-4">
-          <label for="validationDefault05" class="form-label">Mobile No.</label>
-          <input
-            type="number"
-            class="form-control has-validation"
-            id="validationDefault05"
-            placeholder="Enter your Mobile Number"
-            name="mobile_no"
-            autocomplete="off"
-            required
-          />
-        </div>
-
-        <div class="row">
-          <div class="col d-flex justify-content-center align-items-center">
-            <button type="submit" class="btn btn-primary" name="submit">
-              Submit
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
 
 </html>
